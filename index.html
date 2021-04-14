@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Garden - Freud</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="images/logo.svg" alt="logo" />
+    </header>
+    <section class="search-section" aria-label="Search section">
+      <div class="search-section__row">
+        <div class="search-section__input">
+          <input id="search-text" type="text" />
+          <img src="images/search-icon.svg" alt="search icon" />
+        </div>
+        <button id="search-section__button">Search</button>
+      </div>
+      <button id="search-section__ramdomButton">
+        Ramdom
+        <img src="images/ramdom-icon.svg" alt="ramdon icon" />
+      </button>
+    </section>
+    <main class="content">
+      <h2 id="content__title">Quotes</h2>
+
+      <section id="content__section"></section>
+    </main>
+    <footer class="footer">
+      <img src="images/logo.svg" alt="logo" />
+    </footer>
+    <template id="quote">
+      <article class="content__card">
+        <span class="content__category"></span>
+        <p class="content__body"></p>
+      </article>
+    </template>
+    <script src="main.js"></script>
+  </body>
+</html>
